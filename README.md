@@ -1,7 +1,4 @@
 # 📘 Projeto - Fundamentos de Sistemas Web  
-**Fase 1**
-
----
 
 ## 👤 Nome do estudante  
 *Áquilla Siqueira Gomes*
@@ -15,6 +12,6 @@ Descreva aqui o que se quer alcançar com o projeto e as atividades específicas
 ---
 
 ## 🌐 Vizualize o projeto aqui  
-[Insira aqui o link do GitHub Pages](https://...)
+[Insira aqui o link do GitHub Pages](https://sgomesaquilla.github.io/Fundamentos-de-Sistemas-Web/)
 
 ---
