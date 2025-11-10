@@ -12,6 +12,6 @@ Descreva aqui o que se quer alcançar com o projeto e as atividades específicas
 ---
 
 ## 🌐 Vizualize o projeto aqui  
-[Vizualize o projeto aqui](https://sgomesaquilla.github.io/Fundamentos-de-Sistemas-Web/)
+[Vizualize o projeto aqui](https://sgomesaquilla.github.io/Plataforma-Online-Petshop/)
 
 ---
