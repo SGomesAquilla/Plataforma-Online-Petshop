@@ -1,4 +1,4 @@
-// CPF Format
+// Máscara de CPF
 document.getElementById("cpf").addEventListener("input", function () {
     let v = this.value.replace(/\D/g, "");
     if (v.length > 3) v = v.replace(/(\d{3})(\d)/, "$1.$2");
@@ -7,7 +7,7 @@ document.getElementById("cpf").addEventListener("input", function () {
     this.value = v;
 });
 
-// Automatic filling by CEP
+// Máscara de CEP
 const cepInput = document.getElementById("cep");
 
 cepInput.addEventListener("input", function () {
@@ -31,7 +31,7 @@ cepInput.addEventListener("blur", async function () {
             return;
         }
 
-        // Fill fields automatically
+        // Preenche campos automaticamente a partir do CEP
         const endereco = document.getElementById("endereco");
         if (endereco) endereco.value = data.logradouro || "";
 
@@ -49,7 +49,7 @@ cepInput.addEventListener("blur", async function () {
     }
 });
 
-// Format Telefone
+// Máscara Telefone
 const telInput = document.getElementById("telefone");
 
 telInput.addEventListener("input", function () {
@@ -75,21 +75,18 @@ telInput.addEventListener("input", function () {
     this.value = v;
 });
 
-// Format Hora
+// Máscara Hora
 const horaInput = document.getElementById("horaAgendamento");
 
 horaInput.addEventListener("input", function () {
-    let v = this.value.replace(/\D/g, ""); // remove tudo que não é número
+    let v = this.value.replace(/\D/g, "");
 
-    // Adiciona os dois pontos automaticamente
     if (v.length >= 3) {
         v = v.replace(/(\d{2})(\d{0,2})/, "$1:$2");
     }
 
-    // Atualiza o valor
     this.value = v;
 
-    // Validação automática de horário
     const [hStr, mStr] = this.value.split(":");
 
     if (hStr && parseInt(hStr) > 23) {
@@ -152,7 +149,7 @@ function finalizarCompra() {
     modal.hide();
 }
 //-----------------------------------------------------------------------------
-// Seleciona todos os botões de agendamento
+// Seleciona Serviço autmaticamente a partir de qual botão "Agendar" foi clicado
 document.querySelectorAll(".agendar-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const servico = btn.dataset.servico; // pega o serviço do data-servico
