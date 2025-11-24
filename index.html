@@ -463,7 +463,7 @@
 
                                     <div class="mb-3">
                                         <label for="telefone" class="form-label">Telefone (Whatsapp)</label>
-                                        <input type="tel" class="form-control" id="telefone" placeholder="Ex: (51) 99888-7777" required>
+                                        <input type="tel" class="form-control" id="telefone" maxlength="15" placeholder="Ex: (51) 99888-7777" required>
                                     </div>
 
                                     <div class="mb-3">
@@ -532,9 +532,15 @@
                                             <option value="boleto">Boleto</option>
                                         </select>
 
-                                        <div class="mb-3 obs-form">
-                                            <label for="mensagem" class="form-label">Observações Adicionais</label>
-                                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Restrições, horários preferenciais, etc."></textarea>
+                                        <div class="mb-3 date-select">
+                                            <label for="dataAgendamento" class="form-label">Data do Agendamento</label>
+                                            <input type="date" class="form-control" id="dataAgendamento" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="horaAgendamento" class="form-label">Horário</label>
+                                            <input type="text" class="form-control" id="horaAgendamento"
+                                                placeholder="00:00" maxlength="5" required>
                                         </div>
 
                                     </div>

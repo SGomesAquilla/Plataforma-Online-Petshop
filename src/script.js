@@ -32,12 +32,71 @@ cepInput.addEventListener("blur", async function () {
         }
 
         // Fill fields automatically
-        document.getElementById("endereco").value = data.logradouro || "";
-        document.getElementById("bairro")?.value = data.bairro || "";
-        document.getElementById("cidade")?.value = data.localidade || "";
-        document.getElementById("estado")?.value = data.uf || "";
+        const endereco = document.getElementById("endereco");
+        if (endereco) endereco.value = data.logradouro || "";
+
+        const bairro = document.getElementById("bairro");
+        if (bairro) bairro.value = data.bairro || "";
+
+        const cidade = document.getElementById("cidade");
+        if (cidade) cidade.value = data.localidade || "";
+
+        const estado = document.getElementById("estado");
+        if (estado) estado.value = data.uf || "";
 
     } catch (err) {
         console.error("Erro ao buscar CEP:", err);
+    }
+});
+
+// Format Telefone
+const telInput = document.getElementById("telefone");
+
+telInput.addEventListener("input", function () {
+    let v = this.value.replace(/\D/g, "");
+
+    // Celular: (00) 00000-0000
+    if (v.length > 10) {
+        v = v.replace(/^(\d{2})(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } 
+    // Fixo: (00) 0000-0000
+    else if (v.length > 6) {
+        v = v.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+    }
+    // (00) 0000
+    else if (v.length > 2) {
+        v = v.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
+    }
+    // (00
+    else {
+        v = v.replace(/^(\d{0,2})/, "($1");
+    }
+
+    this.value = v;
+});
+
+// Format Hora
+const horaInput = document.getElementById("horaAgendamento");
+
+horaInput.addEventListener("input", function () {
+    let v = this.value.replace(/\D/g, ""); // remove tudo que não é número
+
+    // Adiciona os dois pontos automaticamente
+    if (v.length >= 3) {
+        v = v.replace(/(\d{2})(\d{0,2})/, "$1:$2");
+    }
+
+    // Atualiza o valor
+    this.value = v;
+
+    // Validação automática de horário
+    const [hStr, mStr] = this.value.split(":");
+
+    if (hStr && parseInt(hStr) > 23) {
+        this.value = "23" + (mStr ? ":" + mStr : "");
+    }
+
+    if (mStr && parseInt(mStr) > 59) {
+        this.value = hStr + ":59";
     }
 });
