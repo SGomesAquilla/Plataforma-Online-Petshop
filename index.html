@@ -353,7 +353,7 @@
                                     <small class="text-muted me-1">a partir de</small> 
                                     <span class="fs-4 fw-bold text-success">R$ 59,90</span>
                                 </div>
-                                <button class="btn btn-outline-primary" data-bs-target="#agendamentoModal">Agendar</button>
+                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@
                                     <span class="fs-4 fw-bold text-success">R$ 99,90</span>
                                 </div>
 
-                                <button class="btn btn-success" data-bs-target="#agendamentoModal">Agendar</button>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
                             </div>
                         </div>
                     </div>
@@ -429,5 +429,87 @@
 
         <script src=""></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="modal fade" id="agendamentoModal" tabindex="-1" aria-labelledby="agendamentoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="agendamentoModalLabel">
+                            <i class="bi bi-calendar-check me-2"></i> Agende seu Serviço ou Banho
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6 border-end">
+                                    <h4 class="mb-3 text-secondary">Seus Dados</h4>
+
+                                    <div class="mb-3">
+                                        <label for="nomeCliente" class="form-label">Nome Completo</label>
+                                        <input type="text" class="form-control" id="nomeCliente" placeholder="Ex: João da Silva" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="emailCliente" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="emailCliente" placeholder="seu.email@exemplo.com" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label">Telefone (Whatsapp)</label>
+                                        <input type="tel" class="form-control" id="telefone" placeholder="Ex: (51) 99888-7777" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ps-md-4">
+                                    <h4 class="mb-3 text-secondary">Dados do Pet e Serviço</h4>
+
+                                    <div class="mb-3">
+                                        <label for="nomePet" class="form-label">Nome do Pet</label>
+                                        <input type="text" class="form-control" id="nomePet" placeholder="Ex: Rex, Luna" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="tipoPet" class="form-label">Espécie</label>
+                                        <select class="form-select" id="tipoPet" required>
+                                            <option selected disabled value="">Selecione...</option>
+                                            <option value="cachorro">Cachorro</option>
+                                            <option value="gato">Gato</option>
+                                            <option value="outro">Outro (coelho, etc.)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="servicoDesejado" class="form-label">Serviço Desejado</label>
+                                        <select class="form-select" id="servicoDesejado" required>
+                                            <option selected disabled value="">Selecione um Serviço</option>
+                                            <option value="banhoSimples">Banho e Tosa Simples (R$ 59,90)</option>
+                                            <option value="tosaCompleta">Pacote Tosa Completa e Banho (R$ 99,90)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="my-4">
+
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">Observações Adicionais</label>
+                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Porte do animal, restrições, horários preferenciais, etc."></textarea>
+                            </div>
+                        
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Fechar</button>
+                                <button class="btn btn-success" type="submit">
+                                    <i class="bi bi-calendar-check me-2"></i> Confirmar Agendamento
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </body>
 </html>
