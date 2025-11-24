@@ -32,10 +32,10 @@ O foco principal é a **comunidade universitária da PUCRS** (estudantes, profes
 ### 📅 Metas do Projeto
 - [x] **Fase 1:** Estruturação da interface estática (**HTML**) para validação da arquitetura da informação.
 - [x] **Fase 2:** Implementação de estilização e interatividade com uso do framework **Bootstrap**, além do uso personalizado de **CSS** e **JavaScript**
-- [ ] **Fase 3:** Tradução do projeto atual com uso de framework Vue.js
-- [ ] **Fase 4:** Criação do Back-end com python e Flask.
-- [ ] **Fase 4:** Criação e utilização de banco de dados PostgreSQL.
-- [ ] **Fase 5:** Deploy em ambiemnte nuvem moderno.
+- [ ] **Fase 3:** Tradução do projeto atual com views e components, utilizando framework **Vue.js**
+- [ ] **Fase 4:** Criação do Back-end com **python** e **Flask**.
+- [ ] **Fase 4:** Criação e utilização de banco de dados **PostgreSQL**.
+- [ ] **Fase 5:** Deploy em ambiemnte cloud moderno.
 
 ---
 
