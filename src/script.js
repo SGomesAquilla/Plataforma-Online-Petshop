@@ -100,3 +100,66 @@ horaInput.addEventListener("input", function () {
         this.value = hStr + ":59";
     }
 });
+// ------------------------------------------------------------------------------------------------
+// Array para armazenar itens do carrinho
+let carrinho = [];
+
+// Função para adicionar item
+function adicionarAoCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    atualizarCarrinho();
+}
+
+// Atualizar modal do carrinho
+function atualizarCarrinho() {
+    const lista = document.getElementById("carrinhoItens");
+    const totalEl = document.getElementById("carrinhoTotal");
+
+    lista.innerHTML = ""; // Limpa lista
+    let total = 0;
+
+    carrinho.forEach((item, index) => {
+        total += item.preco;
+        const li = document.createElement("li");
+        li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+        li.innerHTML = `
+            ${item.nome}
+            <span>R$ ${item.preco.toFixed(2)}</span>
+            <button class="btn btn-sm btn-danger ms-2" onclick="removerItem(${index})">Remover</button>
+        `;
+        lista.appendChild(li);
+    });
+
+    totalEl.textContent = total.toFixed(2);
+}
+
+// Remover item do carrinho
+function removerItem(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+}
+
+// Exemplo de finalizar compra
+function finalizarCompra() {
+    if(carrinho.length === 0) {
+        alert("Seu carrinho está vazio!");
+        return;
+    }
+    alert(`Compra finalizada! Total: R$ ${document.getElementById("carrinhoTotal").textContent}`);
+    carrinho = [];
+    atualizarCarrinho();
+    const modal = bootstrap.Modal.getInstance(document.getElementById('carrinhoModal'));
+    modal.hide();
+}
+//-----------------------------------------------------------------------------
+// Seleciona todos os botões de agendamento
+document.querySelectorAll(".agendar-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const servico = btn.dataset.servico; // pega o serviço do data-servico
+        const selectServico = document.getElementById("servico");
+        if (selectServico) {
+            selectServico.value = servico; // seleciona automaticamente
+        }
+    });
+});
+

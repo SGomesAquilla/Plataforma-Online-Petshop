@@ -51,7 +51,7 @@
                             </li>
                             
                             <li class="nav-item">
-                                <button class="btn btn-outline-success ms-lg-3" onclick="">
+                                <button class="btn btn-outline-success ms-lg-3" data-bs-toggle="modal" data-bs-target="#carrinhoModal" onclick="">
                                     <i class="bi bi-cart-fill"></i> Carrinho
                                 </button>
                             </li>
@@ -140,7 +140,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 49,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Coleira Ajustável de Couro', 49.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 25,50</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Brinquedo Mordedor de Corda', 25.50)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 189,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Cama Ortopédica', 189.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 95,00</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Arranhador de Gatos Torre', 95.00)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 139,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Ração Premium', 139.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 19,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Petisco Ossinhos', 19.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +237,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 69,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Ração Premium Gatos Filhotes', 69.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 35,00</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Biscoito Funcional Dental', 35.00)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +278,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 55,00</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Tapete Higiênico', 55.00)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +292,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 32,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Shampoo 2 em 1 para Filhotes', 32.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 45,00</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Kit Higiene Dental', 45.00)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +320,7 @@
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
                                     <span class="fs-4 fw-bold text-success">R$ 28,90</span>
-                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                    <button class="btn btn-primary" onclick="adicionarAoCarrinho('Solução Limpadora de Orelhas', 28.90)"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +353,7 @@
                                     <small class="text-muted me-1">a partir de</small> 
                                     <span class="fs-4 fw-bold text-success">R$ 59,90</span>
                                 </div>
-                                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
+                                <button class="btn btn-outline-primary agendar-btn" data-servico="simples" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@
                                     <span class="fs-4 fw-bold text-success">R$ 99,90</span>
                                 </div>
 
-                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
+                                <button class="btn btn-success agendar-btn" data-servico="pacote" data-bs-toggle="modal" data-bs-target="#agendamentoModal">Agendar</button>
                             </div>
                         </div>
                     </div>
@@ -513,11 +513,11 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="porteAnimal" class="form-label">Serviço Desejado</label>
-                                        <select class="form-select" id="porteAnimal" required>
+                                        <label for="servico" class="form-label">Serviço Desejado</label>
+                                        <select class="form-select" id="servico" required>
                                             <option selected disabled value="">Selecione...</option>
-                                            <option value="pequeno">Banho e Tosa Simples</option>
-                                            <option value="medio">Pacote Tosa Completa e Banho c/ Tele-busca</option>
+                                            <option value="simples">Banho e Tosa Simples</option>
+                                            <option value="pacote">Pacote Tosa Completa e Banho c/ Tele-busca</option>
                                         </select>
                                     </div>
 
@@ -561,6 +561,35 @@
                     
                 </div>
             </div>
+        </div>
+
+        <!-- Modal do Carrinho -->
+        <div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="carrinhoModalLabel">
+                <i class="bi bi-cart-fill me-2"></i> Seu Carrinho
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <ul class="list-group" id="carrinhoItens">
+                <!-- Itens do carrinho serão adicionados aqui -->
+                </ul>
+                <div class="mt-3 text-end">
+                <strong>Total: R$ <span id="carrinhoTotal">0.00</span></strong>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success" onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+            </div>
+        </div>
         </div>
 
         <script src="./src/script.js"></script>
