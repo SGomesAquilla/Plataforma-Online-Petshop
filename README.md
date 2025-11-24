@@ -36,4 +36,4 @@ O foco principal é a **comunidade universitária da PUCRS** (estudantes, profes
 ---
 
 ## 🌐 Visualize o Projeto
-[Clique aqui para acessar a plataforma online](https://sgomesaquilla.github.io/Plataforma-Online-Petshop/)
+[Clique aqui para acessar a plataforma online](https://sgomesaquilla.github.io/Plataforma-Online-Petshop/#)
