@@ -11,11 +11,14 @@
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
     font-weight: 600; 
-    font-size: 1.5rem;
-    color: #007bff !important; 
+    font-size: 1.5rem; 
 }
 
 .hero-img {
     height: 500px; 
     object-fit: cover; 
+}
+
+.hero-title {
+    color: #007bff; /* blue example */
 }
