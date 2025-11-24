@@ -1,0 +1,16 @@
+.navbar-brand .home {
+    height: 40px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Efeito de Rotação */
+.navbar-brand .home:hover {
+    transform: rotate(-9deg); 
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    font-size: 1.5rem;
+    color: #007bff !important; 
+}
