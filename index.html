@@ -426,9 +426,8 @@
                 </div>
             </div>
         </footer>
-
-        <script src=""></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- FORMULÁRIO -->
         <div class="modal fade" id="agendamentoModal" tabindex="-1" aria-labelledby="agendamentoModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
@@ -453,18 +452,39 @@
                                     </div>
 
                                     <div class="mb-3">
+                                        <label for="telefone" class="form-label">CPF</label>
+                                        <input type="text" class="form-control" id="cpf" maxlength="14" placeholder="Ex: 000.000.000-00" required>
+                                    </div>
+
+                                    <div class="mb-3">
                                         <label for="emailCliente" class="form-label">E-mail</label>
-                                        <input type="email" class="form-control" id="emailCliente" placeholder="seu.email@exemplo.com" required>
+                                        <input type="email" class="form-control" id="emailCliente" placeholder="seu.email@exemplo.com">
                                     </div>
 
                                     <div class="mb-3">
                                         <label for="telefone" class="form-label">Telefone (Whatsapp)</label>
                                         <input type="tel" class="form-control" id="telefone" placeholder="Ex: (51) 99888-7777" required>
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="cep">CEP</label>
+                                        <input type="text" class="form-control" id="cep" placeholder="00000-000" maxlength="9" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="endereco">Endereço</label>
+                                        <input type="text" class="form-control" id="endereco" placeholder="Ex: Av. Ipiranga" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="numero">Número</label>
+                                        <input type="text" class="form-control" id="numero" placeholder="123" required>
+                                    </div>
+
                                 </div>
 
                                 <div class="col-md-6 ps-md-4">
-                                    <h4 class="mb-3 text-secondary">Dados do Pet e Serviço</h4>
+                                    <h4 class="mb-3 text-secondary">Dados do Pet</h4>
 
                                     <div class="mb-3">
                                         <label for="nomePet" class="form-label">Nome do Pet</label>
@@ -482,22 +502,47 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="servicoDesejado" class="form-label">Serviço Desejado</label>
-                                        <select class="form-select" id="servicoDesejado" required>
-                                            <option selected disabled value="">Selecione um Serviço</option>
-                                            <option value="banhoSimples">Banho e Tosa Simples (R$ 59,90)</option>
-                                            <option value="tosaCompleta">Pacote Tosa Completa e Banho (R$ 99,90)</option>
+                                        <label for="porteAnimal" class="form-label">Porte do Animal</label>
+                                        <select class="form-select" id="porteAnimal" required>
+                                            <option selected disabled value="">Selecione...</option>
+                                            <option value="pequeno">Pequeno (5Kg - 9Kg)</option>
+                                            <option value="medio">Médio (10Kg - 14Kg)</option>
+                                            <option value="grande">Grande (15Kg - 19Kg)</option>
+                                            <option value="gigante">Gigante (+20Kg)</option>
                                         </select>
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="porteAnimal" class="form-label">Serviço Desejado</label>
+                                        <select class="form-select" id="porteAnimal" required>
+                                            <option selected disabled value="">Selecione...</option>
+                                            <option value="pequeno">Banho e Tosa Simples</option>
+                                            <option value="medio">Pacote Tosa Completa e Banho c/ Tele-busca</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="formaPagamento" class="form-label">Forma de Pagamento</label>
+                                        <select class="form-select" id="formaPagamento" required>
+                                            <option selected disabled value="">Selecione...</option>
+                                            <option value="credito">Cartão de Crédito</option>
+                                            <option value="debito">Cartão de Débito</option>
+                                            <option value="pix">PIX</option>
+                                            <option value="dinheiro">Dinheiro</option>
+                                            <option value="boleto">Boleto</option>
+                                        </select>
+
+                                        <div class="mb-3 obs-form">
+                                            <label for="mensagem" class="form-label">Observações Adicionais</label>
+                                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Restrições, horários preferenciais, etc."></textarea>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                             
                             <hr class="my-4">
-
-                            <div class="mb-4">
-                                <label for="mensagem" class="form-label">Observações Adicionais</label>
-                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Porte do animal, restrições, horários preferenciais, etc."></textarea>
-                            </div>
                         
                             <div class="d-flex justify-content-end">
                                 <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Fechar</button>
@@ -511,5 +556,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="./src/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     </body>
 </html>
