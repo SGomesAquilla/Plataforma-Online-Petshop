@@ -30,8 +30,8 @@ O foco principal é a **comunidade universitária da PUCRS** (estudantes, profes
 5.  **Cadastro de Usuário e Pet:** Registro de dados do tutor e características do animal (porte, raça, alergias) para personalização.
 
 ### 📅 Metas do Projeto
-* **Fase Inicial (Atual):** Estruturação da interface estática (**HTML**) para validação da arquitetura da informação.
-* **Fases Futuras:** Implementação de estilização (**CSS**), interatividade (**JavaScript**) e desenvolvimento do **back-end** para gestão de pedidos e agendamentos.
+* **Fase 1:** Estruturação da interface estática (**HTML**) para validação da arquitetura da informação.
+* **Fases 2:** Implementação de estilização e interatividade com uso do framework **Bootstrap**, além do uso personalizado de **CSS** e **JavaScript**
 
 ---
 
