@@ -61,186 +61,320 @@
         </header>
 
         <main>
-            <section class="hero">
-
+            <section class="hero pt-5 pb-5"> 
                 <Article class="container">
-                    <div>
-                        <h1>PETSHOP PUCRS</h1>
-                        <h2> Universidade nao eh lugar so de estudar, mas tambem de cuidar do seu pet </h2>
-                    </div>
-                    <div class="carrossel">
-                        <ul>
-                            <li>
-                                <img alt="PetShop PUCRS" src="./src/assets/img/gatinho.png" width="200" height="200">
-                            </li>
-                            <li>
-                                <img alt="Acessorios" src="./src/assets/img/acessorios.png" width="200" height="200">
-                            </li>
-                            <li>
-                                <img alt="Racoes e Petiscos" src="./src/assets/img/racoes.png" width="200" height="200">
-                            </li>
-                            <li>
-                                <img alt="Promocao" src="./src/assets/img/anuncio.png" width="200" height="200">
-                            </li>
-                            <li>
-                                <img alt="Banho e Tosa" src="./src/assets/img/banho.png" width="200" height="200">
-                            </li>
-                        </ul>
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                            <h1 class="display-4 fw-bold">PETSHOP PUCRS</h1> 
+                            <h2 class="lead"> Universidade não é lugar só de estudar, mas também de cuidar do seu pet </h2>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            
+                            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                                
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+
+                                <div class="carousel-inner rounded shadow"> 
+                                    
+                                    <div class="carousel-item active">
+                                        <img src="./src/assets/img/gatinho.png" class="d-block w-100 hero-img" alt="PetShop PUCRS">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img src="./src/assets/img/acessorios.png" class="d-block w-100 hero-img" alt="Acessorios">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img src="./src/assets/img/racoes.png" class="d-block w-100 hero-img" alt="Racoes e Petiscos">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img src="./src/assets/img/anuncio.png" class="d-block w-100 hero-img" alt="Promocao">
+                                    </div>
+                                    
+                                    <div class="carousel-item">
+                                        <img src="./src/assets/img/banho.png" class="d-block w-100 hero-img" alt="Banho e Tosa">
+                                    </div>
+
+                                </div>
+                                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </Article>
-
             </section>
 
             <!--FIM DA SESSAO DE HERO -->
-            <hr>
-            <hr>
-            <hr>
+            <hr class="my-5">
 
-            <section id="acessorios">
-                <h3>Acessórios (Roupas, Brinquedos, Camas, etc...)</h3>
+            <section id="acessorios" class="py-5"> <div class="container">
+                <h3 class="text-center mb-5 display-6 fw-bold">Acessórios (Roupas, Brinquedos, Camas, etc...)</h3>
 
-                <article>
-                    <h4>Produto 1: Coleira Ajustável de Couro</h4>
-                    <div>
-                        <img src="./src/assets/img/produto1.png" alt="Coleira de Couro Marrom" width="200" height="200">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0"> <img src="./src/assets/img/produto1.png" class="card-img-top mx-auto d-block p-3" alt="Coleira de Couro Marrom" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Coleira Ajustável de Couro</h4>
+                                    <p class="card-text text-muted">Coleira de couro legítimo, ajustável, ideal para cães de médio e grande porte. Possui fecho de segurança reforçado e acabamento premium.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 49,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto2.png" class="card-img-top mx-auto d-block p-3" alt="Mordedor de Corda com Nós" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Brinquedo Mordedor de Corda</h4>
+                                    <p class="card-text text-muted">Brinquedo em corda trançada resistente com nós nas pontas. Ajuda na higiene bucal e distrai o pet, evitando o estresse.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 25,50</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-cama.png" class="card-img-top mx-auto d-block p-3" alt="Cama Ortopédica" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cama Ortopédica (Porte M)</h4>
+                                    <p class="card-text text-muted">Cama com espuma de memória, ideal para pets mais velhos ou com problemas nas articulações. Capa removível e lavável.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 189,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-arranhador.png" class="card-img-top mx-auto d-block p-3" alt="Arranhador de Gatos Torre" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Arranhador de Gatos em Torre</h4>
+                                    <p class="card-text text-muted">Torre de 1 metro de altura com múltiplos níveis e revestimento em sisal. Ideal para afiar as unhas e garantir o exercício.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 95,00</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <p>
-                        **Descrição:** Coleira de couro legítimo, ajustável, ideal para cães de médio e grande porte. Possui fecho de segurança reforçado e acabamento premium.
-                    </p>
-                    <p>
-                        **Valor:** R$ 49,90
-                    </p>
-                </article>
-
-                <hr> 
-                <article>
-                    <h4>Produto 2: Brinquedo Mordedor de Corda</h4>
-                    <div>
-                        <img src="./src/assets/img/produto2.png" alt="Mordedor de Corda com Nós" width="200" height="200">
                     </div>
-                    <p>
-                        **Descrição:** Brinquedo em corda trançada resistente com nós nas pontas. Ajuda na higiene bucal e distrai o pet, evitando o estresse.
-                    </p>
-                    <p>
-                        **Valor:** R$ 25,50
-                    </p>
-                </article>
-                
             </section>
 
             <!--FIM DA SESSAO DE ACESSOROS -->
-            <hr>
-            <hr>
-            <hr>
+            <hr class="my-5">
 
-            <section id="racoes">
-                <h3>Raçōes Não Perecíveis e Petiscos</h3>
+            <section id="racoes" class="py-5">
+                <div class="container">
+                    <h3 class="text-center mb-5 display-6 fw-bold">Raçōes Não Perecíveis e Petiscos</h3>
 
-                <article>
-                    <h4>Produto 3: Ração Premium para Cães Adultos</h4>
-                    <div>
-                        <img src="./src/assets/img/produto3.png" alt="Saco de Ração Premium" width="200" height="200">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto3.png" class="card-img-top mx-auto d-block p-3" alt="Saco de Ração Premium" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ração Premium para Cães Adultos</h4>
+                                    <p class="card-text text-muted">Ração seca sabor frango e arroz, fórmula premium especial para cães adultos de todas as raças. Enriquecida com vitaminas e ômega 3. Saco de 10kg.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 139,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto4.png" class="card-img-top mx-auto d-block p-3" alt="Pacote de Petiscos Bifinho" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ossinhos Bifinho para Cães (Petisco)</h4>
+                                    <p class="card-text text-muted">Petisco macio em formato de osso, sabor carne. Ideal para adestramento e recompensa. Pacote com 150g.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 19,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-racao-gato.png" class="card-img-top mx-auto d-block p-3" alt="Ração para Gatos Filhotes" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ração Premium Gatos Filhotes</h4>
+                                    <p class="card-text text-muted">Fórmula balanceada com DHA e cálcio para crescimento saudável. Sabor salmão. Saco de 3kg.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 69,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-biscoito.png" class="card-img-top mx-auto d-block p-3" alt="Biscoito Funcional" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Biscoito Funcional Dental</h4>
+                                    <p class="card-text text-muted">Biscoitos crocantes que auxiliam na limpeza dos dentes e no controle do tártaro. Sabor menta. Pote de 250g.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 35,00</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <p>
-                        **Descrição:** Ração seca sabor frango e arroz, fórmula premium especial para cães adultos de todas as raças. Enriquecida com vitaminas e ômega 3. Saco de 10kg.
-                    </p>
-                    <p>
-                        **Valor:** R$ 139,90
-                    </p>
-                </article>
-
-                <hr> 
-                <article>
-                    <h4>Produto 4: Ossinhos Bifinho para Cães (Petisco)</h4>
-                    <div>
-                        <img src="./src/assets/img/produto4.png" alt="Pacote de Petiscos Bifinho" width="200" height="200">
-                    </div>
-                    <p>
-                        **Descrição:** Petisco macio em formato de osso, sabor carne. Ideal para adestramento e recompensa. Pacote com 150g.
-                    </p>
-                    <p>
-                        **Valor:** R$ 19,90
-                    </p>
-                </article>
-                
+                </div>
             </section>
 
             <!--FIM DA SESSAO DE RACOES -->
-            <hr>
-            <hr>
-            <hr>
+            <hr class="my-5">
 
-            <section id="higiene">
+            <section id="higiene" class="py-5">
+                <div class="container">
+                    <h3 class="text-center mb-5 display-6 fw-bold">Produtos de Higiene e Limpeza</h3>
 
-                <h3>Produtos de Higiene e Limpeza</h3>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto5.png" class="card-img-top mx-auto d-block p-3" alt="Pacote de Tapetes Higiênicos" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tapete Higiênico Super Absorvente</h4>
+                                    <p class="card-text text-muted">Pacote com 30 unidades. Possui carvão ativado para neutralizar odores e barreiras anti-vazamento. Tamanho 60x60cm.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 55,00</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
 
-                <article>
-                    <h4>Produto 5: Tapete Higiênico Super Absorvente</h4>
-                    <div>
-                        <img src="./src/assets/img/produto5.png" alt="Pacote de Tapetes Higiênicos" width="200" height="200">
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto6.png" class="card-img-top mx-auto d-block p-3" alt="Frasco de Shampoo para Filhotes" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Shampoo 2 em 1 para Filhotes</h4>
+                                    <p class="card-text text-muted">Shampoo e Condicionador. Fórmula suave, sem lágrimas, com extrato de camomila. Frasco de 500ml.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 32,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-escova.png" class="card-img-top mx-auto d-block p-3" alt="Kit Higiene Bucal Pet" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kit Higiene Bucal (Escova + Gel)</h4>
+                                    <p class="card-text text-muted">Kit com escova de dedo e gel dental com sabor de carne. Essencial para a saúde bucal diária do seu pet.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 45,00</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="./src/assets/img/produto-novo-orelha.png" class="card-img-top mx-auto d-block p-3" alt="Limpador de Orelhas" style="width: 200px; height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Solução Limpadora de Orelhas</h4>
+                                    <p class="card-text text-muted">Líquido de limpeza suave para a higiene das orelhas, prevenindo acúmulo de cera e infecções. Frasco de 100ml.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0 pt-0">
+                                    <span class="fs-4 fw-bold text-success">R$ 28,90</span>
+                                    <button class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i> Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <p>
-                        **Descrição:** Pacote com 30 unidades de tapete higiênico descartável. Possui carvão ativado para neutralizar odores e barreiras anti-vazamento. Tamanho 60x60cm.
-                    </p>
-                    <p>
-                        **Valor:** R$ 55,00
-                    </p>
-                </article>
-
-                <hr> 
-                <article>
-                    <h4>Produto 6: Shampoo 2 em 1 para Filhotes</h4>
-                    <div>
-                        <img src="./src/assets/img/produto6.png" alt="Frasco de Shampoo para Filhotes" width="200" height="200">
-                    </div>
-                    <p>
-                        **Descrição:** Shampoo e Condicionador para filhotes. Fórmula suave, sem lágrimas, com extrato de camomila. Frasco de 500ml.
-                    </p>
-                    <p>
-                        **Valor:** R$ 32,90
-                    </p>
-                </article>
-            
+                </div>
             </section>
 
             <!--FIM DA SESSAO DE HIGIENE -->
-            <hr>
-            <hr>
-            <hr>
+            <hr class="my-5">
 
-            <section id="servicos">
-                <h3>Serviços de Banho e Tosa</h3>
+            <section id="servicos" class="py-5 bg-light"> <div class="container">
+                <h3 class="text-center mb-5 display-6 fw-bold">Serviços de Banho e Tosa</h3>
 
-                <article>
-                    <h4>Serviço 1: Banho e Tosa Simples</h4>
-                    <p>
-                        **Descrição:** O serviço inclui banho com água quente, corte de unhas e limpeza de ouvidos. Realizado em nossa loja.
-                    </p>
-                    <p>
-                        **Detalhe Importante:** Sem Tele-busca (O cliente leva e busca o pet).
-                    </p>
-                    <p>
-                        **Valor:** R$ 50,00 (Para cães de pequeno porte)
-                    </p>
-                </article>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow border-primary"> <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="bi bi-heart-fill me-2"></i> Banho e Tosa Simples</h4>
+                                <p class="card-text mt-3">O serviço inclui banho com água quente, corte de unhas e limpeza de ouvidos. Realizado em nossa loja.</p>
+                                
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Detalhe Importante:</strong> Sem Tele-busca (O cliente leva e busca o pet).</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white pt-0">
+                                <span class="fs-4 fw-bold text-success">R$ 50,00</span>
+                                <span class="text-muted">(Para cães de pequeno porte)</span>
+                                <button class="btn btn-outline-primary">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
 
-                <hr> 
-                <article>
-                    <h4>Serviço 2: Pacote Tosa Completa e Banho com Tele-busca</h4>
-                    <p>
-                        **Descrição:** Inclui banho especial, hidratação, tosa completa (na máquina ou tesoura, conforme a raça/preferência) e perfume. Agendamento com hora marcada.
-                    </p>
-                    <p>
-                        **Detalhe Importante:** Com Tele-busca (Busca e entrega em um raio de até 10km da PUCRS).
-                    </p>
-                    <p>
-                        **Valor:** R$ 110,00 (Para cães de porte médio)
-                    </p>
-                </article>
-            </section>
-            <hr>
-            <hr>
-            <hr>
+                    <div class="col">
+                        <div class="card h-100 shadow border-success">
+                            <div class="card-body">
+                                <h4 class="card-title text-success"><i class="bi bi-star-fill me-2"></i> Pacote Tosa Completa e Banho c/ Tele-busca</h4>
+                                <p class="card-text mt-3">Inclui banho especial, hidratação, tosa completa (na máquina ou tesoura, conforme a raça/preferência) e perfume. Agendamento com hora marcada.</p>
+                                
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Detalhe Importante:</strong> Com Tele-busca (Busca e entrega em um raio de até 10km da PUCRS).</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center bg-white pt-0">
+                                <span class="fs-4 fw-bold text-success">R$ 110,00</span>
+                                <span class="text-muted">(Para cães de porte médio)</span>
+                                <button class="btn btn-success">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
 
         </main>
         <footer>
